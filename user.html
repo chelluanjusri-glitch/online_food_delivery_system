@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Module - FoodExpress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadUserPage()">
+
+<header>
+
+    <h1>🍔 FoodExpress</h1>
+
+    <nav>
+        <span id="welcomeUser"></span>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Cart</a>
+        <a href="#orders">Orders</a>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+</header>
+
+<main>
+
+    <section id="menu">
+
+        <h2>🍽️ Food Menu</h2>
+
+        <div id="foodList" class="food-grid"></div>
+
+    </section>
+
+
+    <section id="cart">
+
+        <h2>🛒 Your Cart</h2>
+
+        <div id="cartList"></div>
+
+        <h3 id="cartTotal">Total: ₹0</h3>
+
+        <button onclick="placeOrder()">Place Order</button>
+
+        <p id="orderMessage"></p>
+
+    </section>
+
+
+    <section id="orders">
+
+        <h2>📦 My Orders</h2>
+
+        <div id="userOrders"></div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
